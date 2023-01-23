@@ -10,5 +10,6 @@ console.log("Qual è il tuo colore preferito? ", favouriteColour);
 const userPwd = userName + userSurname + favouriteColour + "23"
 
 const outputMsg = "Grazie, <br> la password sicura è " + userPwd;
+console.log(outputMsg);
 
 document.getElementById("outputMsg").innerHTML = outputMsg;
