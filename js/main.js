@@ -1,5 +1,14 @@
-let name = prompt("Qual è il tuo nome?");
-let surname = prompt("Qual è il tuo cognome?");
-let colour = prompt("Qual è il tuo colore preferito?");
+const userName = prompt("Qual è il tuo nome?");
+console.log("Qual è il tuo nome? ", userName);
 
-document.writeln("nomecognomecolorepreferito23");
+const userSurname = prompt("Qual è il tuo cognome?");
+console.log("Qual è il tuo cognome? ", userSurname);
+
+const favouriteColour = prompt("Qual è il tuo colore preferito?");
+console.log("Qual è il tuo colore preferito? ", favouriteColour);
+
+const userPwd = userName + userSurname + favouriteColour + "23"
+
+const outputMsg = "Grazie, <br> la password sicura è " + userPwd;
+
+document.getElementById("outputMsg").innerHTML = outputMsg;
